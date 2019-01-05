@@ -131,7 +131,7 @@
         <item name="android:layout_marginLeft">@dimen/dp20</item>
         <item name="android:layout_marginTop">5dp</item>
         <item name="android:layout_marginBottom">5dp</item>
-        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textSize">@dimen/sp18</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
@@ -139,7 +139,7 @@
         <item name="android:layout_marginLeft">@dimen/dp20</item>
         <item name="android:layout_marginTop">5dp</item>
         <item name="android:layout_marginBottom">5dp</item>
-        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textSize">@dimen/sp18</item>
         <item name="android:textColor">@color/shady_lady</item>
     </style>
 </resources>

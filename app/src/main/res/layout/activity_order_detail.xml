@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context=".ui.activity.mine.OrderStatisActivity"
+    >
+
+    <include layout="@layout/topbar_layout"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_item_head_proxy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:src="@drawable/img_proxy_head"/>
+
+        <TextView
+            android:id="@+id/tv_item_title_proxy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp40"
+            android:layout_toRightOf="@id/iv_item_head_proxy"
+            android:text="特级安溪铁观音茶叶浓香型盒装500g"
+            android:textSize="@dimen/dp16"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"
+        android:background="@color/stack"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_goods_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp20"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_shop_info_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配货对象"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/yjqkybjt"
+            android:text="10个"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@color/white_smoke"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_goods_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp20"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_shop_info_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配货金额"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/yjqkybjt"
+            android:text="95万"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@color/white_smoke"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp20"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_shop_info_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配货数量"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="152件"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@color/white_smoke"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp20"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_shop_info_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="货物成本"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="75万"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@color/white_smoke"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_sale_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp20"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_shop_info_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="销售费用"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/yjqkybjt"
+            android:text="5万"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@color/white_smoke"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp20"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_shop_info_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="综合利润"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="15万"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@color/white_smoke"/>
+
+</LinearLayout>

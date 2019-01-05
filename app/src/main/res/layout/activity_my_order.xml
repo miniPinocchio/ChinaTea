@@ -1,10 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.activity.mine.MyOrderActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <include layout="@layout/topbar_layout"/>
+
+    <RadioGroup
+        android:id="@+id/rg_proxy_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_proxy_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_btn_red_white"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="尊钻代理订单"/>
+
+        <RadioButton
+            android:id="@+id/rb_custom_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_btn_red_white"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="客户申报订单"/>
+
+        <RadioButton
+            android:id="@+id/rb_custom_all_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_btn_red_white"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="汇总订单"/>
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_marginLeft="@dimen/dp30"
+        android:background="@drawable/shape_bg_red_corner"
+        android:text="提交全部订单"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

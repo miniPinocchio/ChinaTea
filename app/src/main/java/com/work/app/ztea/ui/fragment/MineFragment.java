@@ -34,6 +34,7 @@ import com.work.app.ztea.ui.activity.mine.MemberActivity;
 import com.work.app.ztea.ui.activity.mine.MineAddressActivity;
 import com.work.app.ztea.ui.activity.mine.MineCodeActivity;
 import com.work.app.ztea.ui.activity.mine.MineOrderActivity;
+import com.work.app.ztea.ui.activity.mine.OrderStatisActivity;
 import com.work.app.ztea.ui.activity.mine.ProxyOrderActivity;
 import com.work.app.ztea.ui.activity.mine.SettingActivity;
 import com.work.app.ztea.ui.activity.mine.UserInfoActivity;
@@ -118,6 +119,7 @@ public class MineFragment extends BaseFragment {
                             startActivity(new Intent(getContext(),ProxyOrderActivity.class));
                             break;
                         case "订单统计":
+                            startActivity(new Intent(getContext(),OrderStatisActivity.class));
                             break;
                         case "我的明细":
                             break;

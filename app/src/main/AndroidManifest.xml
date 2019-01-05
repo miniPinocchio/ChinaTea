@@ -160,6 +160,16 @@
         </activity>
         <activity android:name=".ui.activity.mine.MyOrderActivity">
         </activity>
+        <activity android:name=".ui.activity.mine.OrderStatisActivity">
+        </activity>
+        <activity android:name=".ui.activity.mine.OrderDetailActivity">
+        </activity>
+        <activity android:name=".ui.activity.mine.StatisticsActivity">
+        </activity>
+        <activity android:name=".ui.activity.mine.DisGoodsActivity">
+        </activity>
+        <activity android:name=".ui.activity.mine.DisSaleGoodsActivity">
+        </activity>
     </application>
 
 </manifest>

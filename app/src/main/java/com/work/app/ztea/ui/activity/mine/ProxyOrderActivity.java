@@ -56,7 +56,7 @@ public class ProxyOrderActivity extends BaseActivity implements RadioGroup.OnChe
         setRightTitle("我的征订", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO
+                startAct(MyOrderActivity.class);
             }
         });
 

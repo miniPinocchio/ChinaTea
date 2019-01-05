@@ -300,6 +300,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp30"
                     android:layout_marginRight="@dimen/dp30"
+                    android:layout_marginBottom="@dimen/dp20"
                     android:background="@drawable/shape_bg_red_corner"
                     android:text="确认征订"
                     android:textColor="@color/white"/>
