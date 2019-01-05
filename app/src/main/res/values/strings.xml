@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tea尊享</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="dzht"><u>《电子合同》</u></string>
+    <string name="fapiao"><u>需要发票</u></string>
+    <string name="string_item_title">特级安溪铁观音茶叶浓香型2018新茶秋茶乌龙茶散装礼盒500g</string>
+
+
+    <string name="no_data">暂时没有数据</string>
+    <string name="please_waite_to_refresh">正在加载，请稍后&#8230;</string>
+    <string name="refresh_failed">加载失败，请点击重试</string>
+    <string name="data_loaded">数据已全部加载</string>
+</resources>

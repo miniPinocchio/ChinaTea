@@ -1,0 +1,145 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/alpha_50_black</item>
+    </style>
+
+    <style name="AppThemes" parent="@style/AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="tab_style">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">2dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/dp14</item>
+        <item name="android:textColor">@color/alpha_50_black</item>
+        <item name="android:scaleType">fitXY</item>
+        <!--<item name="android:scaleX">0.8</item>-->
+        <!--<item name="android:scaleY">0.8</item>-->
+    </style>
+
+    <style name="line">
+        <item name="android:background">@color/line</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp42</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sp18</item>
+        <item name="android:background">@drawable/ic_button_seletor</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="baseText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/alpha_70_black</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">#999999</item>
+    </style>
+
+    <style name="text_small" parent="baseText">
+        <item name="android:textSize">@dimen/sp14</item>
+    </style>
+
+    <style name="text_middle" parent="baseText">
+        <item name="android:textSize">@dimen/sp16</item>
+    </style>
+
+    <style name="text_middle_middle" parent="baseText">
+        <item name="android:textSize">@dimen/sp17</item>
+    </style>
+
+    <style name="text_big" parent="baseText">
+        <item name="android:textSize">@dimen/sp18</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/sp18</item>
+    </style>
+
+    <style name="bg_login_status_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/activity_top</item>
+        <item name="android:background">@color/color_ffffff</item>
+    </style>
+
+    <style name="bg_status_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/activity_top</item>
+        <item name="android:background">@color/red</item>
+    </style>
+
+    <style name="view_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp1</item>
+        <item name="android:background">@color/darkgray</item>
+    </style>
+
+    <style name="MyTabLayoutText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="OperateTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Dialog_FS">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="dialogAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>  //进入时的动画
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>    //退出时的动画
+    </style>
+
+    <style name="yogaCourseRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/layout_rating_bar</item>
+        <item name="android:minHeight">13dp</item>
+    </style>
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+    <style name="text_shop_info_black">
+        <item name="android:layout_marginLeft">@dimen/dp20</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_shop_info_gray">
+        <item name="android:layout_marginLeft">@dimen/dp20</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textColor">@color/shady_lady</item>
+    </style>
+</resources>

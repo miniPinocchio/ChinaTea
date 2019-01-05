@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.mine.ProxyOrderActivity">
+
+    <include layout="@layout/topbar_layout"/>
+
+    <RadioGroup
+        android:id="@+id/rg_proxy_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_proxy_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_btn_red_white"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="尊钻代理设置"/>
+
+        <RadioButton
+            android:id="@+id/rb_custom_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_btn_red_white"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="客户申报设置"/>
+
+    </RadioGroup>
+
+    <!--<cn.bingoogolapple.refreshlayout.BGARefreshLayout-->
+    <!--android:id="@+id/bga_refresh_proxy"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_proxy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--</cn.bingoogolapple.refreshlayout.BGARefreshLayout>-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

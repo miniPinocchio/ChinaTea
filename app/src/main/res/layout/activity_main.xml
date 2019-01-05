@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line"/>
+    <RadioGroup
+        android:id="@+id/rb_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:paddingTop="@dimen/dp5"
+        android:paddingBottom="@dimen/dp4"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/tab_style"
+            android:layout_gravity="center"
+            android:button="@null"
+            android:checked="true"
+            android:text="首页"
+            android:drawableTop="@drawable/selector_tab_1"
+            android:textColor="@drawable/main_radio_text_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_collection"
+            style="@style/tab_style"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:text="商城"
+            android:drawableTop="@drawable/selector_tab_2"
+            android:textColor="@drawable/main_radio_text_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_tool"
+            style="@style/tab_style"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:text="学院"
+            android:drawableTop="@drawable/selector_tab_3"
+            android:textColor="@drawable/main_radio_text_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            style="@style/tab_style"
+            android:layout_alignParentBottom="true"
+            android:button="@null"
+            android:text="我的"
+            android:drawableTop="@drawable/selector_tab_4"
+            android:textColor="@drawable/main_radio_text_selector"/>
+
+    </RadioGroup>
+
+</LinearLayout>

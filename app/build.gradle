@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'ztea'
+            keyPassword 'ztea123'
+            storeFile file('/Users/huiliu/各地项目/武汉-张军/Ztea/app/src/ztea.jks')
+            storePassword 'ztea123'
+        }
+    }
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.work.app.ztea"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+
+MobSDK {
+    appKey "2976fa1c7a404"
+    appSecret "675265afb8be79da736ea50009c3f293"
+
+    ShareSDK {
+        //平台配置信息
+        devInfo {
+            Wechat {
+                appId "wx8ca5e4be3f8e4d76"
+                appSecret "25f2a3fae0af1bdb72300dac1b1533fe"
+            }
+            WechatMoments {
+                appId "wx8ca5e4be3f8e4d76"
+                appSecret "25f2a3fae0af1bdb72300dac1b1533fe"
+            }
+        }
+    }
+}
+
+dependencies {
+    api project(':easyframeforandroid')
+    api project(':dialog')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:multidex:1.0.2'
+    implementation 'pub.devrel:easypermissions:0.3.1'
+    //轮播图
+    implementation 'cn.bingoogolapple:bga-banner:2.2.4@aar'
+    //refreshLayout 下拉刷新
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.1.7@aar'
+    //RXJAVA Rxandroid
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    implementation 'io.reactivex:rxjava:1.1.0'
+    //圆角图片
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    //FlycoTabLayoutndroi
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar'
+    //SKU 流布局
+    implementation 'com.zhy:flowlayout-lib:1.0.3'
+    //websocket
+    implementation 'org.java-websocket:Java-WebSocket:1.3.7'
+    implementation 'com.contrarywind:Android-PickerView:4.1.6'
+    implementation 'org.java-websocket:Java-WebSocket:1.3.0'
+    implementation 'com.7heaven.ioswidget:iosswitch:0.6'
+    //支付宝支付
+    implementation(name: 'alipaySdk-15.5.7-20181023110930-noUtdid', ext: 'aar')
+    //微信支付
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    //基础工具库
+    implementation "com.github.vondear.RxTool:RxKit:v2.2.7"
+    //UI库
+    implementation "com.github.vondear.RxTool:RxUI:v2.2.7"
+    implementation 'com.yalantis:ucrop:2.2.0'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+
+    //注解
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

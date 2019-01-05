@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.work.app.ztea">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.heqi.demo.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+
+    <application
+        android:name=".APP"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemes"
+        tools:replace="android:name">
+        <receiver android:name=".utils.NetBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.WebViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.CodeLoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ForgotPwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.goods.GoodsListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.goods.GoodsDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.goods.GoodsBalanceActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.goods.ShopCarActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.mine.MineAddressActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.mine.AddAddressActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.mine.InvoiceActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.mine.AddInvoiceActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:scheme="wx8ca5e4be3f8e4d76"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.goods.PayResultActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".ui.activity.mine.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.mine.AqSettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.mine.EditPwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.mine.EditMobileActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.mine.FeedBackActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.mine.UserInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.mine.MineCodeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.mine.MineOrderActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.mine.MemberActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.mine.IdentityActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.mine.ShimingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.mine.BindBankActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.goods.IntegralGoodsActivity"/>
+        <activity android:name=".ui.activity.goods.SubscribeActivity"/>
+        <activity android:name=".ui.activity.mine.MyReceiptActivity"/>
+        <activity android:name=".ui.activity.mine.ProxyOrderActivity">
+        </activity>
+        <activity android:name=".ui.activity.mine.VipProxyDetailActivity">
+        </activity>
+        <activity android:name=".ui.activity.mine.CustomProxyDetailActivity">
+        </activity>
+        <activity android:name=".ui.activity.mine.MyOrderActivity">
+        </activity>
+    </application>
+
+</manifest>
